@@ -1,0 +1,176 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+clrscr();
+int ch;
+char em, in;
+while(1)
+{
+clrscr();
+cout<<" \t\t\t\t VOTERS ELIGIBILITY \n ";
+cout <<"\t\t\t 1.India\n "
+     <<"\t\t\t 2.Bahrain\n "
+     <<"\t\t\t 3.Brazil\n "
+     <<"\t\t\t 4.Singapore\n "
+     <<"\t\t\t 5.EastTimar \n "
+     <<"\t\t\t 6.Camereen\n "
+     <<"\t\t\t 7.France\n "
+     <<"\t\t\t 8.South Korea\n "
+     <<"\t\t\t 9.U.A.E\n "
+     <<"\t\t\t 10.Bosnia and Herzegooina \n "
+     <<"\t\t\t 11.Exit \n ";
+cout<<"Enter your choice :";
+cin>>ch;
+int age=0;
+
+if(ch==1)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=18)
+   { cout<<"\n \tYour Eligible to vote ";}
+   else
+   { cout<<"\n \tYour not Eligible to Vote"
+	 << "\n \t Wait for "<<(18-age)<<" Years";
+   }
+}
+
+else if(ch==2)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=20)
+   { cout<<"\n \tYour Eligible to vote ";  }
+   else
+    { cout<<"\n \tYour not Eligible to Vote"
+	 << "\n \t Wait for "<<(20-age)<<" Years";
+    }
+}
+
+else if(ch == 3)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=16)
+    { cout<<"\n \tYour Eligible to vote ";}
+   else
+   { cout<<"\n \tYour not Eligible to Vote"
+	<< "\n \t Wait for "<<(16-age)<<" Years";
+   }
+}
+
+else if(ch==4)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=21)
+    { cout<<"\n \tYour Eligible to vote "; }
+   else
+   { cout<<"\n \tYour not Eligible to Vote"
+	<< "\n \t Wait for "<<(21-age)<<" Years";
+  }
+}
+
+else if(ch==5)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=17)
+    { cout<<"\n \tYour Eligible to vote "; }
+   else
+    { cout<<"\n \tYour not Eligible to Vote"
+	 << "\n \t Wait for "<<(17-age)<<" Years";
+    }
+}
+
+else if(ch==6)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=21)
+     { cout<<"\n \tYour Eligible to vote ";}
+   else
+    { cout<<"\n \tYour not Eligible to Vote"
+	<< "\n \t Wait for "<<(21-age)<<" Years";
+    }
+}
+
+else if(ch==7)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=18)
+    { cout<<"\n \tYour Eligible to vote ";}
+   else
+   { cout<<"\n \tYour not Eligible to Vote"
+	<< "\n \t Wait for "<<(18-age)<<" Years";
+   }
+}
+
+else if(ch==8)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=19)
+    { cout<<"\n \tYour Eligible to vote "; }
+   else
+    { cout<<"\n \tYour not Eligible to Vote"
+	<< "\n \t Wait for "<<(19-age)<<" Years";
+    }
+}
+
+else if(ch==9)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   if(age>=25)
+    { cout<<"\n \tYour Eligible to vote ";}
+   else
+    { cout<<"\n \tYour not Eligible to Vote"
+	<< "\n \t Wait for "<<(25-age)<<" Years";
+    }
+}
+
+else if(ch==10)
+{
+   cout<<"\n Enter your age : " ;
+   cin>>age;
+   cout<<"\n  ARE YOU EMPLOYED (y/n) : ";
+   cin>>em;
+   if(em =='y'||em=='Y')
+   {
+     if(age>=16)
+       cout<<"\n \tYour Eligible to vote ";
+     else
+       cout<<"\n \tYour not Eligible to Vote"
+	   << "\n \t Wait for "<<(16-age)<<" Years";
+   }
+  else
+  {
+    if(age>=18)
+      cout<<"\n \tYour Eligible to vote ";
+    else
+      cout<<"\n \tYour not Eligible to Vote"
+	  << "\n \t Wait for "<<(18-age)<<" Years"
+	  <<"\n \t or have Employment ***.";
+  }
+}
+else if(ch==11)
+ exit(0);
+else
+ cout<<"\n \t\t <<<< INVALID CHOICE >>>>";
+
+
+cout << " \n\n DO YOU WANT TO CHECK AGAIN (Y/N) : ";
+cin>>in;
+if( in == 'n' || in == 'Y')
+ break;
+
+}
+
+getch();
+
+}
